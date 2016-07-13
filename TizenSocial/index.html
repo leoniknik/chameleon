@@ -12,6 +12,7 @@
     <script src="js/jquery.mobile-1.4.5.min.js" type="application/x-javascript" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script type="text/javascript" src="js/main.js"></script>
+    <!--<script type="text/javascript" src="js/temp.js"></script>-->
 <!-- 	<script type="text/javascript" src="js/regU.js"></script> -->
 <!-- 	<script type="text/javascript" src="js/duelU.js"></script> -->
     
@@ -87,6 +88,7 @@
         </p>
         <div data-role="content">
         	<a href="#create" class="ui-btn">Создать дуэль</a>
+        	<a href="#temp" class="ui-btn">It's a trap</a>
         	<ul data-role="listview" data-inset="true" id="listduel">
         		<li><a href="#six">Ваша какая-то дуэль</a></li>
         		<li><a href="#six">Еще одна дуэль</a></li>
@@ -191,9 +193,13 @@
  	<div data-role="page" id="selfy_cam" data-theme="a">
 			<div data-role="content" >	
 				<div id="camera"></div>
+				<canvas id="canvas" width="320" height="240" border="1"></canvas>
+				</div>
+				<button onclick="videoImg()""> Video</button>
+				<button  id="buttonJ"> Сделать Фото</button>
 			</div>
-			<button id="do">Сделать снимок</button>
-	</div>	
+				
+	</div>
 	
 	<div data-role="page" id="create" data-theme="a">
 	
@@ -225,6 +231,8 @@
             	<h4></h4>
         	</div>
 	</div>
+	
+
 	
 </body>
 

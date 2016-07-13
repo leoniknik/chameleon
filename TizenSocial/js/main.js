@@ -40,6 +40,11 @@ function sendRegToServ(){
 	});
 }
 
+var camm;
+var uu;
+
+
+
 //КАМЕРА
 var selfCamera = null;
 
@@ -78,6 +83,7 @@ function SelfCamera() {
             var urlStream = null;
 
             urlStream = window.webkitURL.createObjectURL(stream);
+            uu = urlStream;
             alert (urlStream);
             this.createVideoElement(urlStream);
        
@@ -125,7 +131,7 @@ function SelfCamera() {
 
         navigator.getUserMedia = navigator.getUserMedia ||
             navigator.webkitGetUserMedia;
-        
+
         
         try {
             if (typeof (navigator.getUserMedia) === 'function') {
@@ -219,4 +225,7 @@ $(document).ready(function onReady() {
     'use strict';
     selfCamera.init();
 });
-//
+
+  
+  
+
