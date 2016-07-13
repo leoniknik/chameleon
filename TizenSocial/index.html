@@ -166,7 +166,9 @@
         	<p align=center>
         		<img src="css/images/default.png" width="160" />
         	</p>
-        	<a href="#selfy_cam" class="ui-btn">Сделать фото</a>
+        	<a href="#selfy_cam" class="ui-btn ui-icon-camera ui-btn-icon-left">Сделать фото</a>
+        	<label for="file">File:</label>
+			<input type="file" name="file" id="file" value="">
         	<p><label>Фотография противника</label></p>
         	<p align=center>
         		<img src="css/images/default.png" width="160" />
@@ -190,6 +192,7 @@
 			<div data-role="content" >	
 				<div id="camera"></div>
 			</div>
+			<button id="do">Сделать снимок</button>
 	</div>	
 	
 	<div data-role="page" id="create" data-theme="a">
@@ -213,6 +216,8 @@
 				</br>
 				<label for="textarea">Введите ваше задание</label>
 				<textarea cols="40" rows="8" name="textarea" id="taskarea"></textarea>
+				<label for="date">Выберите дату окончания задания:</label>
+				<input type="date" name="date" id="date" value="">
 				<button id="btnreq">Создать</button>
 			</div>
 			
