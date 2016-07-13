@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>YtZBkpx0/fuVVj6PDmdbCdc+FCDFhKyc95WQ0upLGfQ=</DigestValue>
+<DigestValue>gUwuSMbvvra87iujkgS7UHmIuTJcsnlETSPo+eGMZoM=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -52,11 +52,11 @@
 </Reference>
 <Reference URI="duel.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>tleqVghrkcF015UtUgvx94tttsMKUgf7PvprwjPR4pg=</DigestValue>
+<DigestValue>UB772cYkAYoSIvF0yUCD8YAXvBtGHfxs+91wjaWKrS0=</DigestValue>
 </Reference>
 <Reference URI="friends.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2jxk75f4EH7aWCQoeyXvDolADcPbCELETPG229ykyCI=</DigestValue>
+<DigestValue>nTlBX7JBNvvC1QP4MHPEnYt1hgNDHVZ2g707eevySQ8=</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -64,15 +64,11 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>AqoC5rk3u2u1mb4NoRb7TQuH8uyxLYZSCo8c2022LHw=</DigestValue>
+<DigestValue>wWnrQQP8lyZbd/ZLPfSW7+OgLxxSlfTe7vFW56AnW4w=</DigestValue>
 </Reference>
-<Reference URI="js%2Fduel.js">
+<Reference URI="js%2FduelU.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>4Wkfo24wRXcTFZV3l02j7zKh+VVe0M1hZKFnBdMTFC4=</DigestValue>
-</Reference>
-<Reference URI="js%2Ffriends.js">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>zTYJprr5aKoF6Fh0vy4FHG3kT6l9oVLZVuOPY5rwk/Y=</DigestValue>
 </Reference>
 <Reference URI="js%2Fjqm-docs.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -88,17 +84,9 @@
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>1ZECgF4fd/MgxIZ7IJk6vfB23K6gU9wiwZ2FyvbCjn0=</DigestValue>
+<DigestValue>/L+Ou9F9WuGDAghz4xb/Dsjfp6n3f6UhEe2KUSiHQ0o=</DigestValue>
 </Reference>
-<Reference URI="js%2Fmain_page.js">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</DigestValue>
-</Reference>
-<Reference URI="js%2Frating.js">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>zTYJprr5aKoF6Fh0vy4FHG3kT6l9oVLZVuOPY5rwk/Y=</DigestValue>
-</Reference>
-<Reference URI="js%2Freg.js">
+<Reference URI="js%2FregU.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>x+/MUQF28VQBqxprqS+52ulIggnHWySS0lqcsoAdqt8=</DigestValue>
 </Reference>
@@ -108,15 +96,15 @@
 </Reference>
 <Reference URI="photo.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>GsCJApbb/LUDtE4l+ZwbZr4yO5M5YJ1DqNgPQPlwA9M=</DigestValue>
+<DigestValue>GkfJJowXewEggmHxPuS8cFHKkMhH2tNnxY4dN/v1c1Y=</DigestValue>
 </Reference>
 <Reference URI="rating.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>xd6jOoyXkfyjJPEgRoYvdWkDBTrBrd5qO73npvanBbU=</DigestValue>
+<DigestValue>sV6vcYDTDVUnj5KCHisRzKp/nQ7y96iJe4C7AmXrDn0=</DigestValue>
 </Reference>
 <Reference URI="reg.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>HfqhVVZZx4WRFuosQhp2azpSxiXJz325ckTCv4PPY/0=</DigestValue>
+<DigestValue>BI8f7+h96NEznFuyjLjq4kilm4UwdIezzd1r1Zx1iP8=</DigestValue>
 </Reference>
 <Reference URI="version.txt">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -131,11 +119,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-VGyjATku76zBOH9ZTdgu22o8R+I6rRoVD9tliT06JYsUuhD1F/FI8kQCAt0qXR6O18//loXWthNU
-6g2M3Ac/opw/V5NEZirRQ5rI/z+9rD0fncFBcH4ZHPqDTTs5F8qgmu+0bS6WAuZmN27sLtjAaSob
-JS/aPdqy/wvnaI8dxMR48y5e5EkdwKY4VzaCFlu31CZdUXXz6XuXNiPxpja2R1ktGM8iUsQlkhfN
-5WpUIt5tI1HFR8M3itup3e5rwPA5QQEs7Dyi5BK8yf9vqQ+W8TrCPCT1ecCvfnStpW0U6iNTebLm
-QFO45UDrDorsu8vY9G7XeSiJsqydCeusMK5Vfg==
+SZ0pZl8E7ISS0hO4Nub3UMhuiyOvyobLfr0WJYQ6779kTiBwyZIpBbyyJ2fFa5nwAlGfR2IVRPyh
+ZGzoedzabKtpAZQyt+aD+mouUOvXEk9/CQwF9LaqG5HZBpRLsV5LFMJZcFDuNWl5pXdi5seNp5Ve
+oibFi1vBf7W2dHBV1e9Bs3KsH9MrJBuKwDWFH2IrZnRclFR0zwDkgXd5rWIGZS2ptmnJLBLLHsYa
+LiRLowp5n8fAhTipkPO/I1gMBNfl2d/EL0ymoXAYfqMNYnWujn9tZXOeCJkorXlGF+ViD7QACy7H
+BSmk7yfhJOqawt5TSNnoXrvZJxnwlKzBJgaChg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
