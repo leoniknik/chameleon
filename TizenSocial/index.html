@@ -191,6 +191,36 @@
 				<div id="camera"></div>
 			</div>
 	</div>	
+	
+	<div data-role="page" id="create" data-theme="a">
+	
+	<div data-role="header" data-theme="a">
+        <h1>
+			<img src="css/images/cha.png" width="60" />
+		</h1>
+    </div><!-- /header -->
+        
+			<div data-role="content" >	
+				<label>Подобрать соперника:</label>
+				<label><input name="enemy" type="radio" value="esel" id="ebtn1">Самостоятельно</label>
+    			<label><input name="enemy" type="radio" value="eaut" id="ebtn2">Автоматически</label>
+				<label>Введите имя соперника:</label>
+				<label for="search-8" class="ui-hidden-accessible"></label>
+				<input type="search" name="search-8" id="search-8" value="" data-mini="true">
+				<label>Подобрать задание:</label>
+				<label><input name="task" type="radio" value="tsel" id="tbut1">Самостоятельно</label>
+    			<label><input name="task" type="radio" value="taut" id="tbut2">Автоматически</label>
+				</br>
+				<label for="textarea">Введите ваше задание</label>
+				<textarea cols="40" rows="8" name="textarea" id="taskarea"></textarea>
+				<button id="btnreq">Создать</button>
+			</div>
+			
+			<div data-role="footer" data-id="fool" data-position="fixed" data-tap-toggle="false" >
+            	<h4></h4>
+        	</div>
+	</div>
+	
 </body>
 
 </html>
