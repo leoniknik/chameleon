@@ -55,7 +55,7 @@ function SelfCamera() {
                 style: 'height:' + $(window).height() + 'px',
                 src: src
             }).appendTo('#camera').get(0);
-
+            console.log("FFF");
         };
 
     /**

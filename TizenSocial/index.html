@@ -11,6 +11,9 @@
 	<style type="text/css" media="screen">@import "css/jquery.mobile-1.4.5.min.css";</style>
     <script src="js/jquery.mobile-1.4.5.min.js" type="application/x-javascript" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="js/reg.js"></script>
+	<script type="text/javascript" src="js/duel.js"></script>
     
 </head>
 
@@ -30,9 +33,9 @@
 				<input type="text" name="name" id="name" /></br>
 				<label for="password">Пароль:</label>
 				<input type="password" name="password" id="password" /></br>
-				<button class="ui-btn">Войти</button></br>
-				<a href="reg.html" class="ui-btn">Зарегистрироваться</a>
-				<a href="main_page.html" class="ui-btn">гоу</a>
+				<a href="#three" class="ui-btn">Войти</a><!-- !!!!!!!!!!!!!!!!!!! -->
+				<a href="#two" class="ui-btn">Зарегистрироваться</a>
+				
 			</div>
         </div><!-- /content -->
         
@@ -41,8 +44,153 @@
             <h4></h4>
         </div><!-- /footer -->
     </div><!-- /page one -->
+ 	
+ 	
+ 	<div data-role="page" id="two" data-theme="a">
 
+        <div data-role="header" data-tap-toggle="false" data-theme="a">
+            <h1>
+				<img src="css/images/cha.png" width="60" />
+			</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+            <div data-role="fieldcontain">
+				<label for="name">Имя пользователя:</label>
+				<input type="text" name="name" id="nameR" /></br>
+				<label for="password">Пароль:</label>
+				<input type="password" name="password" id="passwordR1" /></br>
+				<label for="password">Повторите пароль:</label>
+				<input type="password" name="password" id="passwordR2" /></br>
+				<label for="name">Никнейм:</label>
+				<input type="text" name="name" id="nicknameR" /></br>
+				<button class="ui-btn" onclick="sendRegToServ()" >Зарегистрироваться</button>
+			</div>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <h4></h4>
+        </div><!-- /footer -->
+    </div><!-- /page two -->
+ 	
+ 	<div data-role="page" id="three" >
+        <div data-role="header" data-theme="a">
+            <h1>
+				<img src="css/images/cha.png" width="60" />
+			</h1>
+        </div><!-- /header -->
+		<p align=center>
+        		<img src="css/images/kubok.png" width="140" />
+        </p>
+        <p align=center>
+        	Ваш рейтинг:
+        </p>
+        <div data-role="content">
+        	<a href="#create" class="ui-btn">Создать дуэль</a>
+        	<ul data-role="listview" data-inset="true" id="listduel">
+        		<li><a href="#six">Ваша какая-то дуэль</a></li>
+        		<li><a href="#six">Еще одна дуэль</a></li>
+        	</ul>
+        </div><!-- /content -->
+			
+        <div data-role="footer" data-id="fool" data-position="fixed" data-tap-toggle="false" >
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#three" class="ui-btn-active ui-state-persist">Задачи</a></li>
+                    <li><a href="#four">Оценить</a></li>
+                    <li><a href="#five">Друзья</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="four" >
+        <div data-role="header" data-tap-toggle="false" data-theme="a">
+            <h1>
+				<img src="css/images/cha.png" width="60" />
+			</h1>
+        </div><!-- /header -->
+		
+        <div data-role="content" >
+           <button class="ui-btn">Загрузить новые задачи</button>
+        	<ul data-role="listview" data-inset="true" id="seeduel">
+        		<li><a href="#six">Чья-то чужая дуэль</a></li>
+        	</ul>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-id="fool" data-position="fixed" data-tap-toggle="false" >
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#three" >Задачи</a></li>
+                    <li><a href="#four" class="ui-btn-active ui-state-persist">Оценить</a></li>
+                    <li><a href="#five">Друзья</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /page -->
+ 	
+ 	
+ 	<div data-role="page" id="five" >
+        <div data-role="header" data-theme="a">
+            <h1>
+				<img src="css/images/cha.png" width="60" />
+			</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" >
+            
+        </div><!-- /content -->
+
+        <div data-role="footer" data-id="fool" data-position="fixed" data-tap-toggle="false" >
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#three" >Задачи</a></li>
+                    <li><a href="#four" >Оценить</a></li>
+                    <li><a href="#five" class="ui-btn-active ui-state-persist">Друзья</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="six" >
+        <div data-role="header" data-theme="a">
+            <h1>
+				<img src="css/images/cha.png" width="60" />
+			</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+        <textarea cols="40" rows="8" name="textarea" id="zadanie">Здесь будет написано задание</textarea>
+        
+        	<p><label>Ваша фотография</label></p>
+        	<p align=center>
+        		<img src="css/images/default.png" width="160" />
+        	</p>
+        	<a href="#self_cam" class="ui-btn">Сделать фото</a>
+        	<p><label>Фотография противника</label></p>
+        	<p align=center>
+        		<img src="css/images/default.png" width="160" />
+        	</p>
+					<label><input name="rate" type="radio" value="user1" id="rbut1" >Пользователь 1</label>
+    				<label><input name="rate" type="radio" value="user2" id="rbut2" >Пользователь 2</label>
+    				<button  id="but1" onclick="submitRating()">Проголосовать</button>	
+					<label for="textarea">Оставте комментарий:</label>
+					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+					<button  id="but2" onclick="submitComment()">Оставить комментарий</button>				
+					<ul data-role="listview" data-inset="true" id="comments"></ul>
+        </div><!-- /content -->
+        
+			
+        <div data-role="footer" data-id="fool" data-position="fixed" data-tap-toggle="false" >
+            <h4></h4>
+        </div>
+    </div><!-- /page -->
+ 	
+ 	<div data-role="page" id="selfy_cam" data-theme="a">
+			<div data-role="content" >	
+				<div id="camera"></div>
+			</div>
+	</div>	
 </body>
-<script type="text/javascript" src="./js/main.js"></script>
-<script type="text/javascript" src="js/reg.js"></script>
+
 </html>
