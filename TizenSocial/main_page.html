@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chameleon</title>
+
+<!--     <script type="text/javascript" src="./js/main_page.js"></script> -->
+</head>
+<body>
+    <div data-role="page" id="three" >
+        <div data-role="header" data-theme="a">
+            <h1>
+				<img src="css/images/cha.png" width="60" />
+			</h1>
+        </div><!-- /header -->
+		<p align=center>
+        		<img src="css/images/kubok.png" width="140" />
+        </p>
+        <p align=center>
+        	Ваш рейтинг:
+        </p>
+        <div data-role="content">
+        	<button  id="butauto" onclick="createDuel()">Найти дуэль</button>
+        	<a href="create.html" class="ui-btn">Создать дуэль</a>
+        	<ul data-role="listview" data-inset="true" id="listduel">
+        		<li><a href="duel.html">Ваша какая-то дуэль</a></li>
+        		<li><a href="duel.html">Еще одна дуэль</a></li>
+        	</ul>
+        </div><!-- /content -->
+			
+        <div data-role="footer" data-id="fool" data-position="fixed" data-tap-toggle="false" >
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="main_page.html" class="ui-btn-active ui-state-persist">Задачи</a></li>
+                    <li><a href="rating.html">Оценить</a></li>
+                    <li><a href="friends.html">Друзья</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /page -->
+</body>
+</html>
